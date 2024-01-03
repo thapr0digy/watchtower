@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "watchtower"
+version = "0.1.0"
+description = "Attack surface management tool for IT/Security teams"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+neo4j = "^5.14.0"
+python-libnmap = { git = "https://github.com/thapr0digy/python-libnmap.git", branch = "master" }
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
