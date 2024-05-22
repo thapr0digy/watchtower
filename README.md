@@ -7,9 +7,24 @@ A set of tools, APIs and ETL code to understand the attack surface of an organiz
 How it works
 -------------
 JSON data is pushed into a bucket from external tools
-The data is then transformed and loaded into Neo4j AuraDB
+The data is then transformed and loaded into Neo4j DB
+
+Features
+----------
+
+Supported modules
+- Subfinder for DNS enumeration
+- dnsx for DNS resolution
+- Wix DNS for DNS record retrieval
+- tlsx for certificate information
+- nmap for importing nmap scan reports  
+
+How to Fix Docker Desktop
+- Prior to restarting the container, clear the terminal and it should continue.
 
 TODO
 -----
-- Implement nmap importer
+- [x] Implement nmap importer
 - Create Runner class for running multiple tools
+- Common queries for identifying issues
+- 
